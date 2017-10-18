@@ -1,0 +1,50 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*Designed by Alopex 2016.9.24*/
+/*ICF文件配置已经配置好,不需要修改,切勿改动*/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+/*-Specials-*/
+define symbol __ICFEDIT_intvec_start__ = 0x1fff0000;		//ROM启动和RAM启动地址
+/*-Memory Regions-*/
+define symbol __ICFEDIT_region_ROM_start__ = 0x00000000;
+define symbol __ICFEDIT_region_ROM_end__   = 0x00080000;	//ROM 512KB
+define symbol __ICFEDIT_region_RAM_start__ = 0x1fff0000;
+define symbol __ICFEDIT_region_RAM_end__   = 0x20000000;	//SRAM:SRAM1:64KB SRAM2:64K
+/*-Sizes-*/
+define symbol __ICFEDIT_size_cstack__ = 0x2000;			//堆大小
+define symbol __ICFEDIT_size_heap__   = 0x4000;			//栈大小
+/**** End of ICF editor section. ###ICF###*/
+
+define symbol __region_RAM2_start__ = 0x20000000;
+define symbol __region_RAM2_end__   = 0x20000000 + __ICFEDIT_region_RAM_end__ - __ICFEDIT_region_RAM_start__;//SRAM2:64KB
+
+define exported symbol __VECTOR_TABLE = __ICFEDIT_intvec_start__;	//中断向量表放入ROM
+define exported symbol __VECTOR_RAM = __ICFEDIT_region_RAM_start__;	//中断向量表放入RAM	//Common_StartUp是将中断向量表从ROM复制到RAM
+
+define exported symbol __BOOT_STACK_ADDRESS = __region_RAM2_end__ - 8;	//0x2000FFF8;		//启动栈地址,栈向下生长
+
+define symbol __code_start__ = __ICFEDIT_intvec_start__ + 0x410;	//ROM和RAM启动地址不同
+
+define memory mem with size = 4G;					//4G的虚拟寻址空间
+define region ROM_region = mem:[from __ICFEDIT_region_ROM_start__ to __ICFEDIT_region_ROM_end__];
+define region RAM_region = mem:[from __ICFEDIT_region_RAM_start__ + 0x410 to __ICFEDIT_region_RAM_end__] | mem:[from __region_RAM2_start__ to __region_RAM2_end__];
+
+define block CSTACK    with alignment = 8, size = __ICFEDIT_size_cstack__   { };	//堆
+define block HEAP      with alignment = 8, size = __ICFEDIT_size_heap__     { };	//栈
+
+//Common_StartUp 完成初始化
+initialize manually { readwrite };		//未初始化数据.bss
+initialize manually { section .data};		//已初始化数据
+initialize manually { section .textrw };	//_ramfunc声明函数
+do not initialize  { section .noinit };		//复位中断服务函数
+
+define block CodeRelocate { section .textrw_init };
+define block CodeRelocateRam { section .textrw };	// CodeRelocateRam  把代码复制到RAM中(对flash操作的函数必须这样)
+
+place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
+place at address mem:__code_start__ { readonly section .noinit };
+
+place in ROM_region   { readonly, block CodeRelocate};
+
+place in RAM_region   { readwrite, block CodeRelocateRam,
+                        block CSTACK, block HEAP };

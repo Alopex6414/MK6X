@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\NXP\FlashK60Dxxx128K.flash</loader>
+    <range>CODE 0x00000000 0x0fffffff</range>
+  </pass>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\NXP\DFlashK60Dxxx128K.flash</loader>
+    <range>CODE 0x10000000 0x13ffffff</range>
+    <rel_offset>0xF0800000</rel_offset>
+  </pass>
+</flash_board>
+
+

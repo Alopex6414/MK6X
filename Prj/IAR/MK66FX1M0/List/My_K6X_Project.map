@@ -1,0 +1,444 @@
+###############################################################################
+#
+# IAR ELF Linker V7.70.1.11437/W32 for ARM                22/Oct/2016  12:24:35
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Exe\My_K6X_Project.out
+#    Map file     =  
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\List\My_K6X_Project.map
+#    Command line =  
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\App_Init.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\diskio.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\Drive_MPU6050.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\Drive_Oled.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\Drive_Oled_Lib.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\Drive_RTC_Count.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\ff.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\Main.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_ADC.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_CAN.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_Conf.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_DAC.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_DELAY.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_DMA.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_DWT.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_FLASH.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_FLEXBUS.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_FTM.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_GPIO.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_I2C.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_It.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_LPTMR.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_MCG.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_Misc.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_PIT.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_PORT.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_RTC.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_SDHC.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_SPI.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_StartUp.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_SystemInit.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_SysTick.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_UART.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_USB.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_Vectors.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\MK6X_WDOG.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\USB.o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj\USB_CDC.o
+#        -o
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Exe\My_K6X_Project.out
+#        --map
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\List\My_K6X_Project.map
+#        --config "D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\config
+#        files\MK66FX1M0_FLASH.icf" --semihosting
+#        D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\..\..\Lib\CMSIS\iar_cortexM4lf_math.a
+#        --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"A1":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00100000] |
+                [from 0x10000000 to 0x10040000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0410 to 0x20030000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+initialize manually with packing = copy, complex ranges { section .data };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A0":                                        0x410
+  .intvec              const    0x00000000   0x410  MK6X_Vectors.o [1]
+                              - 0x00000410   0x410
+
+"A1":                                         0x3c
+  .noinit              ro code  0x00000410    0x3c  MK6X_StartUp.o [1]
+                              - 0x0000044c    0x3c
+
+"P1", part 1 of 2:                          0x4830
+  .text                ro code  0x0000044c   0xfc6  ff.o [1]
+  .text                ro code  0x00001414   0x598  diskio.o [1]
+  .text                ro code  0x000019ac   0x838  MK6X_SDHC.o [1]
+  .text                ro code  0x000021e4   0x1b4  MK6X_PORT.o [1]
+  .text                ro code  0x00002398     0xc  MK6X_Conf.o [1]
+  .text                ro code  0x000023a4    0x7c  MK6X_DWT.o [1]
+  .text                ro code  0x00002420   0x55c  MK6X_MCG.o [1]
+  .text                ro code  0x0000297c   0x52c  MK6X_FTM.o [1]
+  .rodata              const    0x00002ea8   0x400  Drive_Oled_Lib.o [1]
+  .text                ro code  0x000032a8   0x3ac  Drive_Oled.o [1]
+  .text                ro code  0x00003654    0xfc  MK6X_GPIO.o [1]
+  .text                ro code  0x00003750    0x2c  MK6X_DELAY.o [1]
+  .text                ro code  0x0000377c   0x2d8  MK6X_ADC.o [1]
+  .text                ro code  0x00003a54   0x22c  Drive_MPU6050.o [1]
+  .text                ro code  0x00003c80    0x10  MK6X_I2C.o [1]
+  .text                ro code  0x00003c90   0x1e8  MK6X_UART.o [1]
+  .text                ro code  0x00003e78   0x1c8  MK6X_It.o [1]
+  .text                ro code  0x00004040    0xc4  MK6X_DAC.o [1]
+  .text                ro code  0x00004104   0x1b4  MK6X_DMA.o [1]
+  .text                ro code  0x000042b8   0x130  MK6X_SystemInit.o [1]
+  .text                ro code  0x000043e8    0x2c  MK6X_Misc.o [1]
+  .text                ro code  0x00004414    0x44  MK6X_WDOG.o [1]
+  .text                ro code  0x00004458    0xd0  Main.o [1]
+  .text                ro code  0x00004528   0x12e  App_Init.o [1]
+  .text                ro code  0x00004658    0x70  MK6X_PIT.o [1]
+  .data_init                    0x000046c8   0x11c  <Block>
+    Initializer bytes  const    0x000046c8   0x11c  <for .data-1>
+  .rodata              const    0x000047e4   0x100  MK6X_SDHC.o [1]
+  .text                ro code  0x000048e4    0x40  zero_init3.o [5]
+  .rodata              const    0x00004924    0x3c  MK6X_ADC.o [1]
+  .rodata              const    0x00004960    0x3c  MK6X_DAC.o [1]
+  .rodata              const    0x0000499c    0x3c  MK6X_FTM.o [1]
+  .rodata              const    0x000049d8    0x3c  MK6X_GPIO.o [1]
+  .rodata              const    0x00004a14    0x3c  MK6X_MCG.o [1]
+  .rodata              const    0x00004a50    0x3c  MK6X_Misc.o [1]
+  .rodata              const    0x00004a8c    0x3c  MK6X_PIT.o [1]
+  .rodata              const    0x00004ac8    0x3c  MK6X_PORT.o [1]
+  .rodata              const    0x00004b04    0x3c  MK6X_SDHC.o [1]
+  .rodata              const    0x00004b40    0x3c  MK6X_UART.o [1]
+  .text                ro code  0x00004b7c    0x30  iarttio.o [6]
+  .text                ro code  0x00004bac     0x8  XShttio.o [3]
+  .text                ro code  0x00004bb4    0x28  data_init.o [5]
+  .text                ro code  0x00004bdc    0x22  fpinit_M.o [4]
+  .iar.init_table      const    0x00004c00    0x10  - Linker created -
+  .text                ro code  0x00004c10    0x1a  cmain.o [5]
+  .text                ro code  0x00004c2a     0x4  low_level_init.o [3]
+  .text                ro code  0x00004c2e     0x4  exit.o [3]
+  .text                ro code  0x00004c34     0xa  cexit.o [5]
+  .text                ro code  0x00004c40    0x14  exit.o [6]
+  .rodata              const    0x00004c54    0x10  ff.o [1]
+  .rodata              const    0x00004c64     0xc  Main.o [1]
+  .text                ro code  0x00004c70     0xc  cstartup_M.o [5]
+  .rodata              const    0x00004c7c     0x0  zero_init3.o [5]
+                              - 0x00004c7c  0x4830
+
+"P1", part 2 of 2:                             0x0
+  CodeRelocate                  0x00004c7c     0x0  <Block>
+
+"P2", part 1 of 3:                           0x11c
+  .data                         0x1fff0410   0x11c  <Block>
+    .data-1                     0x1fff0410   0x119  <Init block>
+      .data            inited   0x1fff0410     0x8  MK6X_ADC.o [1]
+      .data            inited   0x1fff0418     0x8  MK6X_DAC.o [1]
+      .data            inited   0x1fff0420    0x10  MK6X_FTM.o [1]
+      .data            inited   0x1fff0430    0x14  MK6X_GPIO.o [1]
+      .data            inited   0x1fff0444    0xb0  MK6X_MCG.o [1]
+      .data            inited   0x1fff04f4     0x4  MK6X_MCG.o [1]
+      .data            inited   0x1fff04f8    0x14  MK6X_PORT.o [1]
+      .data            inited   0x1fff050c    0x14  MK6X_UART.o [1]
+      .data            inited   0x1fff0520     0x8  XShttio.o [3]
+      .data            inited   0x1fff0528     0x1  diskio.o [1]
+                              - 0x1fff052c   0x11c
+
+"P2", part 2 of 3:                            0xc0
+  .bss                          0x1fff052c    0xc0  <Block>
+    .bss               zero     0x1fff052c     0x4  ff.o [1]
+    .bss               zero     0x1fff0530     0x4  Main.o [1]
+    .bss               zero     0x1fff0534     0x4  Main.o [1]
+    .bss               zero     0x1fff0538     0x4  Main.o [1]
+    .bss               zero     0x1fff053c    0x80  MK6X_DMA.o [1]
+    .bss               zero     0x1fff05bc     0x4  MK6X_It.o [1]
+    .bss               zero     0x1fff05c0     0x4  MK6X_It.o [1]
+    .bss               zero     0x1fff05c4     0x4  MK6X_It.o [1]
+    .bss               zero     0x1fff05c8    0x14  MK6X_SDHC.o [1]
+    .bss               zero     0x1fff05dc     0x4  MK6X_SystemInit.o [1]
+    .bss               zero     0x1fff05e0     0x4  MK6X_SystemInit.o [1]
+    .bss               zero     0x1fff05e4     0x2  ff.o [1]
+    .bss               zero     0x1fff05e6     0x2  MK6X_SystemInit.o [1]
+    .bss               zero     0x1fff05e8     0x1  Main.o [1]
+    .bss               zero     0x1fff05e9     0x1  MK6X_It.o [1]
+    .bss               zero     0x1fff05ea     0x1  MK6X_It.o [1]
+                              - 0x1fff05ec    0xc0
+
+"P2", part 3 of 3:                             0x0
+  CodeRelocateRam               0x1fff05ec     0x0  <Block>
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xbf:
+          0x1fff052c  0xbf
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj: [1]
+    App_Init.o             302
+    Drive_MPU6050.o        556
+    Drive_Oled.o           940
+    Drive_Oled_Lib.o              1 024
+    MK6X_ADC.o             728       68        8
+    MK6X_Conf.o             12
+    MK6X_DAC.o             196       68        8
+    MK6X_DELAY.o            44
+    MK6X_DMA.o             436               128
+    MK6X_DWT.o             124
+    MK6X_FTM.o           1 324       76       16
+    MK6X_GPIO.o            252       80       20
+    MK6X_I2C.o              16
+    MK6X_It.o              456                14
+    MK6X_MCG.o           1 372      240      180
+    MK6X_Misc.o             44       60
+    MK6X_PIT.o             112       60
+    MK6X_PORT.o            436       80       20
+    MK6X_SDHC.o          2 104      316       20
+    MK6X_StartUp.o          60
+    MK6X_SystemInit.o      304                10
+    MK6X_UART.o            488       80       20
+    MK6X_Vectors.o                1 040
+    MK6X_WDOG.o             68
+    Main.o                 208       12       13
+    diskio.o             1 432        1        1
+    ff.o                 4 038       16        6
+    --------------------------------------------
+    Total:              16 052    3 221      464
+
+command line: [2]
+    --------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    XShttio.o                8        8        8
+    exit.o                   4
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                  16        8        8
+
+m7M_tls.a: [4]
+    fpinit_M.o              34
+    --------------------------------------------
+    Total:                  34
+
+rt7M_tl.a: [5]
+    cexit.o                 10
+    cmain.o                 26
+    cstartup_M.o            12
+    data_init.o             40
+    zero_init3.o            64
+    --------------------------------------------
+    Total:                 152
+
+shb_l.a: [6]
+    exit.o                  20
+    iarttio.o               48
+    --------------------------------------------
+    Total:                  68
+
+    Gaps                     8        2
+    Linker created                   19
+------------------------------------------------
+    Grand Total:        16 330    3 250      472
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff052c          --   Gb  - Linker created -
+.bss$$Limit             0x1fff05ec          --   Gb  - Linker created -
+.data$$Base             0x1fff0410          --   Gb  - Linker created -
+.data$$Limit            0x1fff052c          --   Gb  - Linker created -
+.data_init$$Base        0x000046c8          --   Gb  - Linker created -
+.data_init$$Limit       0x000047e4          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00004c00          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00004c10          --   Gb  - Linker created -
+?main                   0x00004c11         Code  Gb  cmain.o [5]
+ADCN                    0x1fff0410    0x8  Data  Gb  MK6X_ADC.o [1]
+ADC_Convert_Result      0x1fff0538    0x4  Data  Gb  Main.o [1]
+ADC_Init                0x0000377d  0x22c  Code  Gb  MK6X_ADC.o [1]
+ADC_Once                0x000039eb   0x54  Code  Gb  MK6X_ADC.o [1]
+ADC_Start               0x000039a9   0x42  Code  Lc  MK6X_ADC.o [1]
+AllInit                 0x000045c1   0x96  Code  Gb  App_Init.o [1]
+CodeRelocate$$Base      0x00004c7c          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00004c7c          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff05ec          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff05ec          --   Gb  - Linker created -
+Common_StartUp          0x000042b9   0xa0  Code  Gb  MK6X_SystemInit.o [1]
+DACN                    0x1fff0418    0x8  Data  Gb  MK6X_DAC.o [1]
+DAC_Count               0x1fff05c4    0x4  Data  Gb  MK6X_It.o [1]
+DAC_Flag                0x1fff05ea    0x1  Data  Gb  MK6X_It.o [1]
+DAC_Init                0x00004041   0x86  Code  Gb  MK6X_DAC.o [1]
+DAC_Out                 0x000040c7   0x32  Code  Gb  MK6X_DAC.o [1]
+DELAY_us                0x00003751   0x28  Code  Gb  MK6X_DELAY.o [1]
+DMA_Count_Array         0x1fff053c   0x80  Data  Gb  MK6X_DMA.o [1]
+DMA_Count_Get           0x0000424d   0x20  Code  Gb  MK6X_DMA.o [1]
+DMA_Count_Init          0x0000411b  0x132  Code  Gb  MK6X_DMA.o [1]
+DMA_Count_Reset         0x0000426d   0x22  Code  Gb  MK6X_DMA.o [1]
+DMA_PTA_Count           0x1fff05c0    0x4  Data  Gb  MK6X_It.o [1]
+DWT_Delay_ms            0x00002409   0x18  Code  Gb  MK6X_DWT.o [1]
+DWT_Delay_us            0x000023a5   0x54  Code  Gb  MK6X_DWT.o [1]
+ESDHC_COMMAND_XFERTYP   0x000047e4  0x100  Data  Gb  MK6X_SDHC.o [1]
+FTMN                    0x1fff0420   0x10  Data  Gb  MK6X_FTM.o [1]
+FTM_Count               0x1fff0534    0x4  Data  Gb  Main.o [1]
+FTM_Flag                0x1fff05e8    0x1  Data  Gb  Main.o [1]
+FTM_PORT_MUX            0x0000297d  0x1ee  Code  Lc  MK6X_FTM.o [1]
+FTM_PWM_Duty            0x00002d45  0x14e  Code  Gb  MK6X_FTM.o [1]
+FTM_PWM_Init            0x00002b6b  0x1da  Code  Gb  MK6X_FTM.o [1]
+FatFs                   0x1fff052c    0x4  Data  Lc  ff.o [1]
+Fsid                    0x1fff05e4    0x2  Data  Lc  ff.o [1]
+GPIOX                   0x1fff0430   0x14  Data  Gb  MK6X_GPIO.o [1]
+GPIO_Get                0x00003703   0x42  Code  Gb  MK6X_GPIO.o [1]
+GPIO_Init               0x00003655   0xae  Code  Gb  MK6X_GPIO.o [1]
+GPIO_Staus              0x1fff0530    0x4  Data  Gb  Main.o [1]
+I2C_Delay               0x00003c81   0x10  Code  Gb  MK6X_I2C.o [1]
+I2C_GPIO_Init           0x00003c65   0x1c  Code  Gb  Drive_MPU6050.o [1]
+I2C_GPIO_Send_Byte      0x00003b05   0xfa  Code  Gb  Drive_MPU6050.o [1]
+I2C_GPIO_Start          0x00003a55   0x60  Code  Gb  Drive_MPU6050.o [1]
+I2C_GPIO_Stop           0x00003ab5   0x50  Code  Gb  Drive_MPU6050.o [1]
+I2C_GPIO_Write_Reg      0x00003c05   0x2a  Code  Gb  Drive_MPU6050.o [1]
+Interrupt_Init          0x00004563   0x4c  Code  Gb  App_Init.o [1]
+MCG_DIV                 0x1fff04f4    0x4  Data  Gb  MK6X_MCG.o [1]
+MCG_DIV_Count           0x00002421  0x430  Code  Gb  MK6X_MCG.o [1]
+MCG_PLL                 0x1fff0444   0xb0  Data  Gb  MK6X_MCG.o [1]
+MK66_Bus_KHz            0x1fff05e0    0x4  Data  Gb  MK6X_SystemInit.o [1]
+MK66_Core_KHz           0x1fff05dc    0x4  Data  Gb  MK6X_SystemInit.o [1]
+MK66_Core_MHz           0x1fff05e6    0x2  Data  Gb  MK6X_SystemInit.o [1]
+MPU6050_Init            0x00003c2f   0x36  Code  Gb  Drive_MPU6050.o [1]
+NVIC_DisableIRQ         0x00003e8d   0x14  Code  Lc  MK6X_It.o [1]
+NVIC_EnableIRQ          0x00004529   0x14  Code  Lc  App_Init.o [1]
+NVIC_EnableIRQ          0x00004105   0x16  Code  Lc  MK6X_DMA.o [1]
+NVIC_EnableIRQ          0x00003e79   0x14  Code  Lc  MK6X_It.o [1]
+NVIC_SetPriority        0x0000453d   0x26  Code  Lc  App_Init.o [1]
+Oled_Clean              0x000033d5   0x3c  Code  Gb  Drive_Oled.o [1]
+Oled_Draw_Picture_128x64
+                        0x00003533  0x11e  Code  Gb  Drive_Oled.o [1]
+Oled_Init               0x00003411  0x122  Code  Gb  Drive_Oled.o [1]
+Oled_Picture_128x64_Star
+                        0x00002ea8  0x400  Data  Gb  Drive_Oled_Lib.o [1]
+Oled_Set_Pos            0x000033a5   0x30  Code  Gb  Drive_Oled.o [1]
+Oled_WrCmd              0x00003327   0x7e  Code  Gb  Drive_Oled.o [1]
+Oled_WrDat              0x000032a9   0x7e  Code  Gb  Drive_Oled.o [1]
+PIT0_IRQHandler         0x00003f01  0x118  Code  Gb  MK6X_It.o [1]
+PIT_Count               0x1fff05bc    0x4  Data  Gb  MK6X_It.o [1]
+PIT_Flag                0x1fff05e9    0x1  Data  Gb  MK6X_It.o [1]
+PIT_Init                0x00004659   0x60  Code  Gb  MK6X_PIT.o [1]
+PLL_Init                0x00002851   0xfe  Code  Gb  MK6X_MCG.o [1]
+PORTC_PTC19_IRQHandler  0x00003ea1   0x30  Code  Gb  MK6X_It.o [1]
+PORTD_PTD15_IRQHandler  0x00003ed1   0x30  Code  Gb  MK6X_It.o [1]
+PORTX                   0x1fff04f8   0x14  Data  Gb  MK6X_PORT.o [1]
+PORT_Init               0x000021e5   0xbe  Code  Gb  MK6X_PORT.o [1]
+PORT_Init_Exit          0x000022a3   0xe4  Code  Gb  MK6X_PORT.o [1]
+Region$$Table$$Base     0x00004c00          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00004c10          --   Gb  - Linker created -
+Reset_Handler           0x00000411         Code  Gb  MK6X_StartUp.o [1]
+SDHC_card               0x1fff05c8   0x14  Data  Gb  MK6X_SDHC.o [1]
+SDHC_cmd                0x00001b75  0x170  Code  Gb  MK6X_SDHC.o [1]
+SDHC_init               0x000019ad   0xf4  Code  Gb  MK6X_SDHC.o [1]
+SDHC_ioctl              0x00001ce5  0x494  Code  Gb  MK6X_SDHC.o [1]
+SDHC_set_baudrate       0x00001aa1   0xd4  Code  Gb  MK6X_SDHC.o [1]
+Start                   0x0000438b   0x20  Code  Gb  MK6X_SystemInit.o [1]
+Stat                    0x1fff0528    0x1  Data  Lc  diskio.o [1]
+SysInit                 0x00004359   0x32  Code  Gb  MK6X_SystemInit.o [1]
+UARTN                   0x1fff050c   0x14  Data  Gb  MK6X_UART.o [1]
+UART_Init               0x00003c91  0x1d0  Code  Gb  MK6X_UART.o [1]
+WDOG_Disable            0x00004439   0x16  Code  Gb  MK6X_WDOG.o [1]
+WDOG_Unlock             0x00004415   0x24  Code  Gb  MK6X_WDOG.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2002fff8         Data  Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000         Data  Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000         Data  Gb  command line/config [2]
+__cmain                 0x00004c11         Code  Gb  cmain.o [5]
+__exit                  0x00004c41   0x14  Code  Gb  exit.o [6]
+__iar_close_ttio        0x00004b7d   0x2e  Code  Gb  iarttio.o [6]
+__iar_data_init3        0x00004bb5   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x00004bdd         Code  Gb  fpinit_M.o [4]
+__iar_lookup_ttioh      0x00004bad    0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x00004c71         Code  Gb  cstartup_M.o [5]
+__iar_ttio_handles      0x1fff0520    0x8  Data  Lc  XShttio.o [3]
+__iar_zero_init3        0x000048e5   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00004c2b    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x410  Data  Gb  MK6X_Vectors.o [1]
+_call_main              0x00004c1d         Code  Gb  cmain.o [5]
+_exit                   0x00004c35         Code  Gb  cexit.o [5]
+_main                   0x00004c27         Code  Gb  cmain.o [5]
+assert_failed           0x00002399    0x2  Code  Gb  MK6X_Conf.o [1]
+check_fs                0x00000da9   0x7a  Code  Lc  ff.o [1]
+chk_chr                 0x000004a3   0x1a  Code  Lc  ff.o [1]
+chk_mounted             0x00000e23  0x400  Code  Lc  ff.o [1]
+clust2sect              0x00000535   0x1a  Code  Gb  ff.o [1]
+create_chain            0x000007e5   0xdc  Code  Lc  ff.o [1]
+create_name             0x00000b93  0x170  Code  Lc  ff.o [1]
+default_isr             0x0000239b    0x6  Code  Gb  MK6X_Conf.o [1]
+dir_find                0x00000aa9   0x68  Code  Lc  ff.o [1]
+dir_next                0x00000977  0x132  Code  Lc  ff.o [1]
+dir_register            0x00000b11   0x82  Code  Lc  ff.o [1]
+dir_sdi                 0x000008c1   0xb6  Code  Lc  ff.o [1]
+disk_initialize         0x00001415  0x280  Code  Gb  diskio.o [1]
+disk_read               0x00001711   0xca  Code  Gb  diskio.o [1]
+disk_status             0x0000197d   0x12  Code  Gb  diskio.o [1]
+disk_write              0x00001839  0x144  Code  Gb  diskio.o [1]
+exit                    0x00004c2f    0x4  Code  Gb  exit.o [3]
+f_mount                 0x00001223   0x32  Code  Gb  ff.o [1]
+f_open                  0x0000126d  0x1a6  Code  Gb  ff.o [1]
+follow_path             0x00000d03   0xa6  Code  Lc  ff.o [1]
+get_fat                 0x0000054f   0xe2  Code  Gb  ff.o [1]
+get_fattime             0x000019a9    0x4  Code  Gb  diskio.o [1]
+main                    0x00004459   0xd0  Code  Gb  Main.o [1]
+mem_cmp                 0x0000047f   0x24  Code  Lc  ff.o [1]
+mem_cpy                 0x0000044d   0x1c  Code  Lc  ff.o [1]
+mem_set                 0x00000469   0x16  Code  Lc  ff.o [1]
+move_window             0x000004bd   0x78  Code  Lc  ff.o [1]
+put_fat                 0x00000631  0x142  Code  Gb  ff.o [1]
+rcvr_datablock          0x00001695   0x7c  Code  Lc  diskio.o [1]
+remove_chain            0x00000773   0x72  Code  Lc  ff.o [1]
+write_vtor              0x000043e9   0x22  Code  Gb  MK6X_Misc.o [1]
+xmit_datablock          0x000017db   0x5e  Code  Lc  diskio.o [1]
+
+
+[1] = D:\十一届\MCU库\开发\K6X\K6X_IAR_LIB\Prj\IAR\MK66FX1M0\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  16 330 bytes of readonly  code memory
+   3 250 bytes of readonly  data memory
+     472 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
